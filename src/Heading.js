@@ -1,6 +1,6 @@
-const Heading=()=>{
+const Heading=(props)=>{
     return (
-        <h1>Restaurant App</h1>
+        <h1>{props.text}</h1>
     )
 }
 export default Heading;
