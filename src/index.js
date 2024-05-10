@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Heading from './Heading' ;
 import Food from './Food';
+import { Button } from './ui/button';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const menuItems = [
@@ -34,6 +35,11 @@ root.render(
     {menuItems.map((menuItem, index) => (
         <Food key={index} {...menuItem} />
       ))}
+      <Button 
+         text="SORT"
+         color="white"
+         backgroundColor="#444"
+      />
   </React.StrictMode>
 );
 reportWebVitals();
