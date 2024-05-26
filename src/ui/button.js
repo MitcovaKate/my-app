@@ -12,7 +12,7 @@ const Button=(props)=>{
         //asc = !asc
         setAsk = !asc
     }}         
-       >{props.text}{asc ? '^': 'V'}
+       >{props.text}{asc ? '^': 'v'}
        </button>
     );
 }

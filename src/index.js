@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import Heading from './Heading' ;
 import Food from './Food';
 import { Button } from './ui/Button';
+import { Counter} from './ui/Counter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const menuItems = [
@@ -40,6 +41,7 @@ root.render(
          color="white"
          backgroundColor="#444"
       />
+      <Counter/>
   </React.StrictMode>
 );
 reportWebVitals();
