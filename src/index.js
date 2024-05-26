@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Heading from './Heading' ;
 import Food from './Food';
-import { Button } from './ui/button';
+import { SortButton} from './ui/button';
 import { Counter} from './ui/Counter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -36,7 +36,7 @@ root.render(
     {menuItems.map((menuItem, index) => (
         <Food key={index} {...menuItem} />
       ))}
-      <Button 
+      <SortButton 
          text="SORT"
          color="white"
          backgroundColor="#444"

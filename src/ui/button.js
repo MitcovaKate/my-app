@@ -1,8 +1,8 @@
 
 import {useState} from 'react';
 
-const Button=(props)=>{
-   let [sortAsc, setSortAsk] = useState(true);
+const SortButton=(props)=>{
+   let [sortAsc, setSortAsс] = useState(true);
     return (
         <button 
             style={{
@@ -11,11 +11,11 @@ const Button=(props)=>{
          }}
        onClick={()=>{
         //asc = !asc
-        setSortAsk = (!sortAsc)
+        setSortAsс = (!sortAsc)
         console.log(sortAsc);
     }}         
        >{props.text}{sortAsc ? '^': 'v'}
        </button>
     );
 }
-export {Button}
+export {SortButton}
