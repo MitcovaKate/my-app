@@ -5,12 +5,15 @@
 
 
   const Food = ({ image, name, price, ingredients }) => {
+ 
     return (
       <div className="food">
         <img src={image} width="300" height="200" alt={name} />
         <h3>{name} - {`$${price}`}</h3>
         <ul>
-          {ingredients.map((ingredient) => (
+          {ingredients
+          .sort()
+          .map((ingredient) => (
             <li key={ingredient}>{ingredient}</li>
           ))}
         </ul>

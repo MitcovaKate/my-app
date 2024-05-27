@@ -1,8 +1,8 @@
 
 import {useState} from 'react';
 
-const SortButton=(props)=>{
-   let [sortAsc, setSortAsс] = useState(true);
+const SortButton = (props)=>{
+   let [sortAsc , setSortAsс] = useState(true);
     return (
         <button 
             style = {{

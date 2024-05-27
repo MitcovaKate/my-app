@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Heading from './Heading' ;
 import Food from './Food';
-import { SortButton} from './ui/button';
+import { SortButton } from './ui/button';
 import { Counter} from './ui/Counter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -33,8 +33,10 @@ const menuItems = [
 root.render(
   <React.StrictMode>
     <Heading text="Restaurant Menu"/>
-    {menuItems.map((menuItem, index) => (
-        <Food key={index} {...menuItem} />
+    {menuItems
+    .sort((item1,item2)=>item1.price - item2.price)
+    .map((menuItem, item) => (
+        <Food key={item} {...menuItem} />
       ))}
       <SortButton 
          text="SORT"
