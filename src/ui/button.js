@@ -17,6 +17,6 @@ const SortButton=(props)=>{
        >
         {props.text}{ sortAsc ? '^': 'v' }
        </button>
-    );
+    )
 }
 export {SortButton}
