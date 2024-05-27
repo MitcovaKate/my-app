@@ -5,7 +5,7 @@ const SortButton=(props)=>{
    let [sortAsc, setSortAsс] = useState(true);
     return (
         <button 
-            style={{
+            style = {{
             color:props.color,
             backgroundColor:props.backgroundColor 
          }}
@@ -14,7 +14,8 @@ const SortButton=(props)=>{
         setSortAsс= (!sortAsc)
         console.log(sortAsc);
     }}         
-       >{props.text}{sortAsc ? '^': 'v'}
+       >
+        {props.text}{ sortAsc ? '^': 'v' }
        </button>
     );
 }
