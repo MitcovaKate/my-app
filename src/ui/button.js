@@ -11,7 +11,7 @@ const SortButton=(props)=>{
          }}
        onClick={()=>{
         //asc = !asc
-        setSortAsс = (!sortAsc)
+        setSortAsс= (!sortAsc)
         console.log(sortAsc);
     }}         
        >{props.text}{sortAsc ? '^': 'v'}
