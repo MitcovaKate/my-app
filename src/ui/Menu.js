@@ -12,7 +12,7 @@ const Menu = ({items,sortAsc}) => {
                         <li>
                             <h2>{item.name}</h2>
                             <img src={item.image} width="200"/>                    
-                            <p>{item.price}</p>
+                            <p>{item.price.amount}{item.price.currency}</p>
                         </li>
                 )}
             </ul> 
