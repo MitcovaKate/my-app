@@ -5,7 +5,10 @@ const getProductItems = (cb) => {
     fetch('http://localhost:3001/api/products')
         .then((response) => response.json())
         .then((items) => cb(items))
-
-        
 }
-export {getProductItems}
+const orderItem=(itemId)=>{
+    fetch('http://localhost:3001/api/order')
+    .then((response)=>response.json())
+    console.log("SENDING ORDER TO THE API SERVER", itemId)
+}
+export {getProductItems, orderItem}
