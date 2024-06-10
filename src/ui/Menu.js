@@ -13,6 +13,16 @@ const Menu = ({items,sortAsc}) => {
                             <h2>{item.name}</h2>
                             <img src={item.image} width="200"/>                    
                             <p>{item.price.amount}{item.price.currency}</p>
+                       <button
+                       onClick={e=>{
+                        let itemId=e.target.dataset.productId
+                        orderItem(itemId)
+                       }} // wrapper
+                       data-product-id={item.id}
+                       >
+                      ORDER
+                       </button>
+                       
                         </li>
                 )}
             </ul> 
