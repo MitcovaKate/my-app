@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { SortButton } from './button';
 import { Menu } from './Menu';
+import { Order } from './Order';
 import { getProductItems } from '../services/DataService';
 
 
@@ -18,6 +19,7 @@ const App = () => {
     return (
         <>
             <SortButton sortAsc={sortAsc} setSortAsc={setSortAsc} />
+            <Order />
             <Menu items={items} sortAsc={sortAsc} /> 
         </>
     )
